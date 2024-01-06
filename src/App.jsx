@@ -4,7 +4,7 @@ import React from 'react';
 
 // import components
 // import Hero from './components/Hero';
-import Cards from './components/Cards';
+import Blogs from './components/Blogs';
 // import Facts from './components/Facts';
 // import Features from './components/Features';
 // import Courses from './components/Courses';
@@ -15,7 +15,7 @@ import Cards from './components/Cards';
 
 const App = () => {
   return (
-    <Cards />
+    <Blogs />
   )
 };
 
