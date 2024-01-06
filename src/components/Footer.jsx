@@ -106,7 +106,7 @@ function Footer() {
         </div>
         <div class="bg-gray-300">
           <div class="container px-5 py-4 mx-auto">
-            <p class="text-sm text-gray-700 capitalize xl:text-center">© 2024 All rights reserved </p>
+            <p class="text-sm text-gray-700 capitalize xl:text-center">© 2024 Yoga-Wings | All rights reserved </p>
           </div>
         </div>
       </footer>
