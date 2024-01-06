@@ -4,18 +4,21 @@ import React from 'react';
 
 // import components
 // import Hero from './components/Hero';
-import Blogs from './components/Blogs';
+// import Blogs from './components/Blogs';
 // import Facts from './components/Facts';
 // import Features from './components/Features';
 // import Courses from './components/Courses';
 // import Pricing from './components/Pricing';
 // import Newsletter from './components/Newsletter';
 // import Contact from './components/Contact';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
+// import Header from './components/Header';
 
 const App = () => {
   return (
-    <Blogs />
+    // <Blogs />
+    <Footer />
+
   )
 };
 
