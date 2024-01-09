@@ -5,6 +5,8 @@ userSchema = new Schema( {
 	
 	unique_id: Number,
 	email: String,
+	phone: Number,
+	address: String,
 	username: String,
 	password: String,
 	passwordConf: String,

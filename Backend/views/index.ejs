@@ -25,11 +25,10 @@
 						$('#form1')[0].reset();
 
 						document.getElementById("check").innerHTML = response.Success;
-						//ADD THIS CODE
 						setTimeout(() => {
 							document.getElementById("check").innerHTML = "";
 						}, 3000);
-						if (response.Success == "You are regestered,You can login now.") {
+						if (response.Success == "You are registered,You can login now.") {
 							document.getElementById("aa").click();
 						};
 					},
@@ -52,6 +51,8 @@
 			<form id="form1" method="post">
 				<input type="text" name="email" placeholder="E-mail" required=""
 				pattern="[-!#$%&'*+\/0-9=?ก-๙A-Z^_a-z`{|}~](\.?[-!#$%&'*+\/0-9=?ก-๙A-Z^_a-z`{|}~])*@[ก-๙a-zA-Z0-9](-*\.?[ก-๙a-zA-Z0-9])*\.[ก-๙a-zA-Z](-?[ก-๙a-zA-Z0-9])+$" class="form-control"><br />
+				<input type="number" name="phone" placeholder="Phone Number" required="" class="form-control"><br />
+				<input type="text" name="address" placeholder="Address" required="" class="form-control"><br />
 				<input type="text" name="username" placeholder="Username" required="" class="form-control"><br />
 				<input type="password" name="password" placeholder="Password" required="" class="form-control"><br />
 				<input type="password" name="passwordConf" placeholder="Confirm Password" required=""
