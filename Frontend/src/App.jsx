@@ -1,31 +1,30 @@
-import React from 'react';
-
-// import aos
-
-// import components
-
-// import Blogs from './components/Blogs';
-// import Facts from './components/Facts';
-// import Features from './components/Features';
-// import Courses from './components/Courses';
-// import Pricing from './components/Pricing';
-// import Newsletter from './components/Newsletter';
-// import Contact from './components/Contact';
-// import Footer from './components/Footer';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Blogs from './components/Blogs'
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Header from './components/Header';
 import Hero from './components/Hero';
-// import Header from './components/Header';
+import Nav from './components/Nav';
+import NavMobile from "./components/NavMobile";
+import NewsLetter from './components/NewsLetter';
 
-const App = () => {
+export default function App() {
   return (
-    // <Blogs />
-    <div className='overflow-hidden'>
-      <Hero/>
-    <div className='h-[2000px]'></div>
-    </div>
-    
-    // <Footer/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/footer" element={<Footer />} />
+        <Route path="/header" element={<Header />} />
+        <Route path="/hero" element={<Hero />} />
+        <Route path="/nav" element={<Nav />} />
+        <Route path="/navmobile" element={<NavMobile />} />
+        <Route path="/newsletter" element={<NewsLetter />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
-  )
-};
-
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
