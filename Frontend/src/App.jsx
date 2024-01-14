@@ -8,6 +8,7 @@ import Hero from './components/Hero';
 import Nav from './components/Nav';
 import NavMobile from "./components/NavMobile";
 import NewsLetter from './components/NewsLetter';
+import { useEffect } from "react";
 
 export default function App() {
   return (<>
