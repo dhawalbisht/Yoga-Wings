@@ -4,7 +4,7 @@ import Image from "../assets/images/hero/guy.png";
 import Header from "./Header";
 const Hero = () => {
   return (<>
-    <section className="min-h-[618px] lg:min-[815px] pt-9 lg:bg-circle lg:bg-no-repeat lg:bg-right-top">
+    <section className="min-h-[618px] lg:min-[815px] pt-9 lg:bg-circle lg:bg-no-repeat lg:bg-right-top" id="home">
       <div className="container mx-auto">
         <Header />
         <div className="flex flex-col items-center lg:flex-row lg:items-start pt-32">

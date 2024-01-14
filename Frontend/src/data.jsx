@@ -1,7 +1,7 @@
 export const navigation = [
     {
         name: 'Home',
-        href: '#hero',
+        href: '#home',
     },
     {
         name: 'Blogs',

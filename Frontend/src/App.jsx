@@ -15,6 +15,7 @@ export default function App() {
     <Blogs />
     <Contact />
     <NewsLetter />
+    <Footer />
   </>
   );
 }
