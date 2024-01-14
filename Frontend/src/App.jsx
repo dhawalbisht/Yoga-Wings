@@ -8,21 +8,27 @@ import Hero from './components/Hero';
 import Nav from './components/Nav';
 import NavMobile from "./components/NavMobile";
 import NewsLetter from './components/NewsLetter';
-
+import Cards from "./components/Cards";
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/blogs" element={<Blogs />} />
+    <>
+    <Hero/>
+    <Cards/>
+  
+
+      {/* <BrowserRouter>
+       <Routes>
+         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/footer" element={<Footer />} />
-        <Route path="/header" element={<Header />} />
-        <Route path="/hero" element={<Hero />} />
-        <Route path="/nav" element={<Nav />} />
-        <Route path="/navmobile" element={<NavMobile />} />
-        <Route path="/newsletter" element={<NewsLetter />} />
-      </Routes>
-    </BrowserRouter>
+         <Route path="/header" element={<Header />} />
+         <Route path="/hero" element={<Hero />} />
+         <Route path="/nav" element={<Nav />} />
+         <Route path="/navmobile" element={<NavMobile />} />
+         <Route path="/newsletter" element={<NewsLetter />} />
+       </Routes>
+     </BrowserRouter>  */}
+    </>
   );
 }
 

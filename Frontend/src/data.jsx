@@ -7,7 +7,7 @@ import CourseImage3 from '../src/assets/images/blogs/course-3.png';
 export const navigation = [
     {
         name: 'Home',
-        href: '#',
+        href: 'i88ll999o8',
     },
     {
         name: 'Classes',
@@ -15,11 +15,11 @@ export const navigation = [
     },
     {
         name: 'Features',
-        href: '#',
+        href: 'feature',
     },
     {
         name: 'Contact',
-        href: '#',
+        href: 'contact',
     },
 ];
 

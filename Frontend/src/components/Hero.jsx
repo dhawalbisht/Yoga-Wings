@@ -1,11 +1,11 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import Image from "../assets/images/hero/guy.png";
-
+import bg from '../assets/images/hero/bg.png';
 import Header from "./Header";
 const Hero = () => {
   return (
-    <section className="min-h-[618px] lg:min-[815px] pt-9 lg:bg-circle lg:bg-no-repeat lg:bg-right-top">
+    <section className='min-h-[600px] lg:min-h-[800px] pt-9 lg:bg-circle lg:bg-no-repeat lg:bg-right-top'>
       <div className="container mx-auto">
         <Header />
         <div className="flex flex-col items-center lg:flex-row lg:items-start pt-32">
@@ -27,7 +27,7 @@ const Hero = () => {
             </button>
           </div>
           <div className="w-full bg-circle bg-cover lg:bg-none lg:w-auto">
-            <div className='flex-1 flex justify-center lg:justify-end'>
+            <div className='flex-1 flex justify-centre lg:justify-end'>
               <div className="w-[234px] h-[234px] lg:w-[504px] lg:h-[744px] lg:mt-0">
                 <Parallax className='w-full h-full p-28 lg:p-16' bgImage={Image} bgImageAlt="Loading" strength={200} />
               </div>

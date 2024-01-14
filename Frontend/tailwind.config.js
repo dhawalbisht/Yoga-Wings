@@ -49,10 +49,10 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        circle: "url('/src/assets/img/hero/bg.png')",
-        cardsBg: "url('/src/assets/img/cards/bg.png')",
-        video: "url('/src/assets/img/video/video.png')",
-        contact: "url('/src/assets/img/contact/bg.png')",
+        circle: "url('/src/assets/images/hero/bg.png')",
+        cardsBg: "url('/src/assets/images/cards/bg.png')",
+        video: "url('/src/assets/images/video/video.png')",
+        contact: "url('/src/assets/images/contact/bg.png')",
       },
       boxShadow: {
         primary: '0px 18px 36px rgba(0, 0, 0, 0.05)',

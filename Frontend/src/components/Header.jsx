@@ -31,9 +31,9 @@ const Header = () => {
       </div>
       <div className='flex items-center'>
         {/* buttons */}
-        <div className=' flex gap-x-4 1g: gap-x-9  '>
+        <div className=' flex 1g: gap-x-9  '>
           <button className=' text-heading font-medium
-          text-sm 1g: text-base hover:text-orange-transition'>
+           1g: text-base hover:text-orange-transition'>
             Sign In
           </button >
           <button className='btn btn-md 1g:px-[30px]
