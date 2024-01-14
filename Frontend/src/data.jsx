@@ -10,16 +10,16 @@ export const navigation = [
         href: '#',
     },
     {
-        name: 'Classes',
-        href: '#',
+        name: 'Blogs',
+        href: 'blogs',
     },
     {
-        name: 'Features',
-        href: '#',
+        name: 'Newsletter',
+        href: 'newsletter',
     },
     {
         name: 'Contact',
-        href: '#',
+        href: 'contact',
     },
 ];
 

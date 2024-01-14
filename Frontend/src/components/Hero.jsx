@@ -3,7 +3,7 @@ import { Parallax } from "react-parallax";
 import Image from "../assets/images/hero/guy.png";
 import Header from "./Header";
 const Hero = () => {
-  return (
+  return (<>
     <section className="min-h-[618px] lg:min-[815px] pt-9 lg:bg-circle lg:bg-no-repeat lg:bg-right-top">
       <div className="container mx-auto">
         <Header />
@@ -38,6 +38,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
+  </>
   );
 };
 
