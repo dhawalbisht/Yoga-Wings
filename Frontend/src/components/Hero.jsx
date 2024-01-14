@@ -1,15 +1,23 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import Image from "../assets/images/hero/guy.png";
+<<<<<<< HEAD
 import bg from '../assets/images/hero/bg.png';
 import Header from "./Header";
 const Hero = () => {
   return (
     <section className='min-h-[600px] lg:min-h-[800px] pt-9 lg:bg-circle lg:bg-no-repeat lg:bg-right-top'>
+=======
+import Header from "./Header";
+const Hero = () => {
+  return (<>
+    <section className="min-h-[618px] lg:min-[815px] pt-9 lg:bg-circle lg:bg-no-repeat lg:bg-right-top" id="home">
+>>>>>>> 7a244f346e94db27dd81b21fa032c708c9430266
       <div className="container mx-auto">
         <Header />
         <div className="flex flex-col items-center lg:flex-row lg:items-start pt-32">
           <div className="flex-1 lg:mt-12">
+<<<<<<< HEAD
           <h1 className="h1 mb-3 lg:mb-[22px]">
             Yoga to <br />
             Release Stress
@@ -30,15 +38,37 @@ const Hero = () => {
             <div className='flex-1 flex justify-centre lg:justify-end'>
               <div className="w-[234px] h-[234px] lg:w-[504px] lg:h-[744px] lg:mt-0">
                 <Parallax className='w-full h-full p-28 lg:p-16' bgImage={Image} bgImageAlt="Loading" strength={200} />
+=======
+            <h1 className="h1 mb-3 lg:mb-[22px]">
+              Yoga to <br />
+              Release Stress
+            </h1>
+            <p className="mb-6 lg:mb-12 max-w-[480px] lg:text-lg">
+              Yoga is a way of life, rather than a chore. Counteract the stress of
+              the modern life by becoming more mindful and compassionate.
+            </p>
+            <div className="mb-12 space-x-4">
+              <button className="btn btn-sm lg:btn-lg btn-orange">
+                Get started
+              </button>
+              <button className="btn btn-sm lg:btn-lg text-heading bg-transparent border border-stroke-1 px-4 hover:bg-stroke-3 transition">
+                Learn More
+              </button>
+            </div>
+            <div className="w-full bg-circle bg-cover lg:bg-none lg:w-auto">
+              <div className='flex-1 flex justify-center lg:justify-end'>
+                <div className="w-[234px] h-[500px] lg:w-[400px] lg:h-[744px] lg:mt-0">
+                  <Parallax className='w-full h-full p-28 lg:p-16' bgImage={Image} bgImageAlt="Loading" />
+                </div>
+>>>>>>> 7a244f346e94db27dd81b21fa032c708c9430266
               </div>
             </div>
           </div>
-         
+
         </div>
-        
-      </div>
       </div>
     </section>
+  </>
   );
 };
 

@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Blogs from './components/Blogs'
+import Blogs from './components/Blogs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -10,6 +10,7 @@ import NavMobile from "./components/NavMobile";
 import NewsLetter from './components/NewsLetter';
 import Cards from "./components/Cards";
 export default function App() {
+<<<<<<< HEAD
   return (
     <>
     <Hero/>
@@ -29,6 +30,15 @@ export default function App() {
        </Routes>
      </BrowserRouter>  */}
     </>
+=======
+  return (<>
+    <Hero />
+    <Blogs />
+    <Contact />
+    <NewsLetter />
+    <Footer />
+  </>
+>>>>>>> 7a244f346e94db27dd81b21fa032c708c9430266
   );
 }
 
