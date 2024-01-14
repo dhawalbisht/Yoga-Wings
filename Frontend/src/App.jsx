@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Blogs from './components/Blogs'
-import Contact from './components/Contact';
+import Contact from './components/Contact'
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
