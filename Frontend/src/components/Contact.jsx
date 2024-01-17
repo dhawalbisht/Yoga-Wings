@@ -1,6 +1,35 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const [emailMessage, setEmailMesssage] = useState('');
+  const [emailTextColor, setEmailTextColor] = useState('');
+  const form = useRef();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setEmailMesssage('');
+    }, 3000);
+
+    // clear the timer
+    return () => clearTimeout(timer);
+  }, [emailMessage]);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_cpuf2im', 'template_dq0yglf', form.current, 'zrOTPtxFgxXta8upi')
+      .then((result) => {
+        setEmailMesssage('Your email was sent :) ')
+        setEmailTextColor('green');
+      }).catch((error) => {
+        setEmailMesssage('Your email was not sent :( ')
+        setEmailTextColor('red');
+      });
+    e.target.reset();
+  };
+
   return (
     <section className="bg-blue-50 dark:bg-slate-800" id="contact">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
@@ -86,7 +115,10 @@ const Contact = () => {
             {/* Right side content (Form) */}
             <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
               <h2 className="mb-4 text-2xl font-bold">Ready to Get Started?</h2>
-              <form id="contactForm">
+              <form
+                onSubmit={(e) => sendEmail(e)}
+                ref={form}
+                id="contactForm">
                 <div className="mb-6">
                   {/* Form fields */}
                   <div className="mx-0 mb-1 sm:mb-4">
@@ -131,6 +163,7 @@ const Contact = () => {
                   >
                     Send Message
                   </button>
+                  <p style={{ color: emailTextColor }}> {emailMessage} </p>
                 </div>
               </form>
             </div>
