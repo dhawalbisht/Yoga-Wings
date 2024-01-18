@@ -41,7 +41,7 @@ const Cards = () => {
                 Everyday pen master classes
               </h4>
               <h2 className="h2 text-stroke-2">3</h2>
-              </div>
+            </div>
             <p className="mb-4 lg:mb-3">
               We're boosting online yoga by enabling anyone in the world to
               learn from the best
@@ -52,10 +52,10 @@ const Cards = () => {
             >
               Read more
             </a></div>
-            <div>
-              <img src={CardImage3} alt="" />
-            </div>
-            
+          <div>
+            <img src={CardImage3} alt="" />
+          </div>
+
         </div>
       </div>
     </section>

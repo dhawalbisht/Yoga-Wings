@@ -1,19 +1,19 @@
 export const navigation = [
     {
         name: 'Home',
-        href: 'i88ll999o8',
+        href: '#home',
     },
     {
         name: 'Blogs',
         href: '#blogs',
     },
     {
-        name: 'Features',
-        href: 'feature',
+        name: 'Newsletter',
+        href: '#newsletter',
     },
     {
         name: 'Contact',
-        href: 'contact',
+        href: '#contact',
     },
 ];
 

@@ -1,6 +1,7 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Blogs from './components/Blogs';
+import Cards from "./components/Cards";
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -14,21 +15,12 @@ import Cards from "./components/Cards";
 export default function App() {
   return (
     <>
-      <Hero/>
-      <Cards/>
-      <Features/>
-      {/* <BrowserRouter>
-       <Routes>
-         <Route path="/blogs" element={<Blogs />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/footer" element={<Footer />} />
-         <Route path="/header" element={<Header />} />
-         <Route path="/hero" element={<Hero />} />
-         <Route path="/nav" element={<Nav />} />
-         <Route path="/navmobile" element={<NavMobile />} />
-         <Route path="/newsletter" element={<NewsLetter />} />
-       </Routes>
-     </BrowserRouter>  */}
+      <Hero />
+      <Cards />
+      <Blogs />
+      <Contact />
+      <NewsLetter />
+      <Footer />
     </>
   );
 }
