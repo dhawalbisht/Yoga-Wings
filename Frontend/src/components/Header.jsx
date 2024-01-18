@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header
-      className={`${header ? 'top-0' : 'top-9'} fixed bg-white w-full max-w-[90vw] 1g:max-w-[1170px] 
+      className={`${header ? 'top-0' : 'top-9'} fixed bg-white w-full max-w-[90vw] 1g:max-w-[1100px] 
       mx-auto rounded-md h-[90px] shadow-primary px-4 
       1g:px-8 z-20 transition-all duration-500 flex
       items-center justify-between`}
@@ -31,7 +31,7 @@ const Header = () => {
       </div>
       <div className='flex items-center'>
         {/* buttons */}
-        <div className=' flex 1g: gap-x-9  '>
+        <div className=' flex 1g: gap-x-4   '>
           <button className=' text-heading font-medium
            1g: text-base hover:text-orange-transition'>
             Sign In
@@ -49,4 +49,4 @@ const Header = () => {
     </header>
   );
 };
-export default Header
+export default Header;

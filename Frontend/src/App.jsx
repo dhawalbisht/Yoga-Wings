@@ -9,6 +9,8 @@ import Hero from './components/Hero';
 import Nav from './components/Nav';
 import NavMobile from "./components/NavMobile";
 import NewsLetter from './components/NewsLetter';
+import Features from "./components/Feature";
+import Cards from "./components/Cards";
 
 export default function App() {
   return (
