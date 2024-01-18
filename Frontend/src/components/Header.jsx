@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Nav from './Nav';
 import NavMobile from './NavMobile';
-import Logo from '../assets/images/logo.png';
+import Logo from '../assets/images/logo.gif';
 const Header = () => {
   const [header, setHeader] = useState(false);
 
@@ -22,7 +22,7 @@ const Header = () => {
       <div className="flex items-center">
         {/* Logo */}
         <a href="#">
-          <img src={Logo} alt='' />
+          <img src={Logo} alt='' style={{ width: "13rem" }} />
         </a>
         {/* nav */}
         <div className='hidden lg:flex' >

@@ -1,14 +1,14 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 import ModalVideo from 'react-modal-video';
 import '../video.scss'
 
 
-import {BsPlayCircleFill} from 'react-icons/bs';
+import { BsPlayCircleFill } from 'react-icons/bs';
 
-const Features = () =>{
+const Features = () => {
     return <section>Features</section>
-    
+
 };
 
 export default Features;
