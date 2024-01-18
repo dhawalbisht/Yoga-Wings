@@ -8,15 +8,15 @@ import Hero from './components/Hero';
 import Nav from './components/Nav';
 import NavMobile from "./components/NavMobile";
 import NewsLetter from './components/NewsLetter';
+import Features from "./components/Feature";
+import Cards from "./components/Cards";
 
 export default function App() {
-<<<<<<< HEAD
   return (
     <>
-      <Hero />
-      <Cards />
-
-
+      <Hero/>
+      <Cards/>
+      <Features/>
       {/* <BrowserRouter>
        <Routes>
          <Route path="/blogs" element={<Blogs />} />
@@ -30,15 +30,6 @@ export default function App() {
        </Routes>
      </BrowserRouter>  */}
     </>
-=======
-  return (<>
-    <Hero />
-    <Blogs />
-    <Contact />
-    <NewsLetter />
-    <Footer />
-  </>
->>>>>>> 7a244f346e94db27dd81b21fa032c708c9430266
   );
 }
 
