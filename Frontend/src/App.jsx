@@ -10,8 +10,6 @@ import Nav from './components/Nav';
 import NavMobile from "./components/NavMobile";
 import NewsLetter from './components/NewsLetter';
 import Features from "./components/Feature";
-import Instructor from "./components/instructor";
-// import Cards from "./components/Cards";
 
 export default function App() {
   return (
@@ -28,6 +26,7 @@ export default function App() {
       <Contact />
       {/* <NewsLetter /> */}
       <Footer />
+      <Features />
     </>
   );
 }
