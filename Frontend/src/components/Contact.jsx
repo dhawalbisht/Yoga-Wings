@@ -35,10 +35,8 @@ const Contact = () => {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div className="mb-4">
           <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
-            <p className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Contact Us
-            </p>
-            <h2 className="font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl">
+
+            <h2 className="font-heading mb-4 font-bold tracking-tight  dark:text-gray text-3xl sm:text-5xl">
               Get in Touch
             </h2>
           </div>
@@ -66,7 +64,7 @@ const Contact = () => {
                   </div>
                   {/* Address details */}
                   <div className="ml-4 mb-4">
-                    <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Our Address</h3>
+                    <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-black">Our Address</h3>
                     <p className="text-gray-600 dark:text-slate-400">Abc Hauz Khas</p>
                     <p className="text-gray-600 dark:text-slate-400">New Delhi</p>
                   </div>
@@ -87,7 +85,7 @@ const Contact = () => {
                   </div>
                   {/* Contact details */}
                   <div className="ml-4 mb-4">
-                    <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Contact</h3>
+                    <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-black">Contact</h3>
                     <p className="text-gray-600 dark:text-slate-400">Mobile: +91 123456789</p>
                     <p className="text-gray-600 dark:text-slate-400">Mail: abc@gmail.com</p>
                   </div>
@@ -105,7 +103,7 @@ const Contact = () => {
                   </div>
                   {/* Working hours details */}
                   <div className="ml-4 mb-4">
-                    <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Working hours</h3>
+                    <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-black">Working hours</h3>
                     <p className="text-gray-600 dark:text-slate-400">Monday - Friday: 08:00 - 17:00</p>
                     <p className="text-gray-600 dark:text-slate-400">Saturday &amp; Sunday: 08:00 - 12:00</p>
                   </div>
@@ -159,7 +157,7 @@ const Contact = () => {
                 <div className="text-center">
                   <button
                     type="submit"
-                    className="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0"
+                    className="w-full bg-blue-800 text-orange px-6 py-3 font-xl rounded-md sm:mb-0"
                   >
                     Send Message
                   </button>
