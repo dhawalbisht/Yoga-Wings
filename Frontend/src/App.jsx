@@ -9,10 +9,8 @@ export default function App() {
         <Routes>
           <Route path='/' element={<Mapping />}></Route>
           <Route path='/login' element={<Login />}></Route>
-
         </Routes>
       </BrowserRouter>
-
     </>
   );
 }
