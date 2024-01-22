@@ -26,8 +26,8 @@ const Hero = () => {
               </button>
             </div>
             <div className="w-full bg-circle bg-cover lg:bg-none lg:w-auto">
-              <div className='flex-1 flex justify-center lg:justify-end'>
-                <div className="w-[234px] h-[234px] lg:w-[504px] lg:h-[744px] lg:mt-0">
+              <div style={{ marginTop: "-30rem" }} className='flex-1 flex justify-center lg:justify-end'>
+                <div className="w-[234px] h-[500px] lg:w-[400px] lg:h-[744px] lg:mt-0">
                   <Parallax className='w-full h-full p-28 lg:p-16' bgImage={Image} bgImageAlt="Loading" />
                 </div>
               </div>
