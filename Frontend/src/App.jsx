@@ -10,6 +10,7 @@ import Nav from './components/Nav';
 import NavMobile from "./components/NavMobile";
 import NewsLetter from './components/NewsLetter';
 import Features from "./components/Feature";
+import Courses from "./components/Courses";
 
 export default function App() {
   return (
@@ -22,11 +23,11 @@ export default function App() {
       <Cards />
       <Blogs />
       <Features/>
-      <Instructor/>
+      <Courses/>
       <Contact />
-      {/* <NewsLetter /> */}
+      <NewsLetter />
       <Footer />
-      <Features />
+      
     </>
   );
 }
