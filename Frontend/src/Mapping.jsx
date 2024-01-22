@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import NewsLetter from './components/NewsLetter';
 import Features from "./components/Feature";
+import Courses from "./components/Courses";
 export default function Mapping() {
     return (
         <>
@@ -14,6 +15,7 @@ export default function Mapping() {
             <Features />
             <NewsLetter />
             <Contact />
+            <Courses />
             <Footer />
         </>
     );
