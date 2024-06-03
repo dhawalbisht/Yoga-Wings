@@ -12,7 +12,7 @@ const Cards = () => {
             {/* card text */}
             <div className="flex items-center mb-[18px] lg:mb-[28px]">
               <h4 className="text-lg lg:text-2xl lg:leading-7 font-bold text-heading mr-8">
-                Make your own Plan
+                Individual Personalised Sessions
               </h4>
               <h2 className="h2 text-stroke-2">1</h2>
             </div>
@@ -20,13 +20,26 @@ const Cards = () => {
               <img src={CardImage1} alt="" />
             </div>
           </div>
+          
           <div className="bg-white w-full max-w-[282px] p-[14px] lg:p-[26px] shadow-2xl rounded-md max-h-[282px]">
             {/* card text */}
             <div className="flex items-center mb-[18px] lg:mb-[28px]">
               <h4 className="text-lg lg:text-2xl lg:leading-7 font-bold text-heading mr-8">
-                Make your own Plan
+                Yoga Group sessions and Kids Yoga
               </h4>
               <h2 className="h2 text-stroke-2">2</h2>
+            </div>
+            <div>
+              <img src={CardImage2} alt="" />
+            </div>
+          </div>
+          <div className="bg-white w-full max-w-[282px] p-[14px] lg:p-[26px] shadow-2xl rounded-md max-h-[282px]">
+            {/* card text */}
+            <div className="flex items-center mb-[18px] lg:mb-[28px]">
+              <h4 className="text-lg lg:text-2xl lg:leading-7 font-bold text-heading mr-8">
+                Recorded Videos to learn Yoga
+              </h4>
+              <h2 className="h2 text-stroke-2">3</h2>
             </div>
             <div>
               <img src={CardImage2} alt="" />
@@ -38,9 +51,9 @@ const Cards = () => {
           <div className="max-w-[240px]">
             <div className="flex items-center mb-4 lg:mb-8">
               <h4 className="text-lg lg:text-2xl lg:leading-7 font-bold text-heading mr-8 ">
-                Everyday pen master classes
+                Corporate Yoga sessions and Disease Management
               </h4>
-              <h2 className="h2 text-stroke-2">3</h2>
+              <h2 className="h2 text-stroke-2">4</h2>
             </div>
             <p className="mb-4 lg:mb-3">
               We're boosting online yoga by enabling anyone in the world to
