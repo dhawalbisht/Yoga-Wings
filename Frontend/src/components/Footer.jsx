@@ -11,13 +11,13 @@ function Footer() {
             <p class="mt-2 text-sm text-gray-500">Our Social media</p>
             <div class="mt-4">
               <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
-                <a class="text-gray-500 cursor-pointer hover:text-gray-700">
+                <a href='https://youtu.be/f2lnZan6GGU?si=Gr_kgixCy8eQHJyg' class="text-gray-500 cursor-pointer hover:text-gray-700">
                   <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-5 h-5" viewBox="0 0 24 24">
                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                   </svg>
                 </a>
-                <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                <a  class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
                   <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-5 h-5" viewBox="0 0 24 24">
                     <path
@@ -25,7 +25,7 @@ function Footer() {
                     </path>
                   </svg>
                 </a>
-                <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                <a href='https://www.instagram.com/reel/C6iMuzzLEmr/?igsh=MWx6bno1YXZjczdmbg==' class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                     stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                     <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
@@ -98,7 +98,7 @@ function Footer() {
                   <a class="text-gray-500 cursor-pointer hover:text-gray-900">Request a Quote</a>
                 </li>
                 <li class="mt-3">
-                  <a class="text-gray-500 cursor-pointer hover:text-gray-900">+123-456-7890</a>
+                  <a class="text-gray-500 cursor-pointer hover:text-gray-900">+91 9045546824</a>
                 </li>
               </nav>
             </div>
