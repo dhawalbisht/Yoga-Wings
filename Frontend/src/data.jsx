@@ -15,5 +15,9 @@ export const navigation = [
         name: 'Contact',
         href: '#contact',
     },
+    {
+        name: 'Courses',
+        href: '#courses',
+    },
 ];
 

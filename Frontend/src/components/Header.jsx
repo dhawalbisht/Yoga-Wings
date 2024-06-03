@@ -34,7 +34,7 @@ const Header = () => {
         <div className=' flex 1g: gap-x-4   '>
           <button className=' text-heading font-medium
            1g: text-base hover:text-orange-transition'>
-            Sign In
+            Login
           </button >
           <button className='btn btn-md 1g:px-[30px]
           bg-orange-100 border border-orange text-orange

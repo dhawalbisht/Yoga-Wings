@@ -1,35 +1,26 @@
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Blogs from './components/Blogs';
-import Cards from "./components/Cards";
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Nav from './components/Nav';
-import NavMobile from "./components/NavMobile";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Mapping from './Mapping';
+import Login from './components/forms/Login';
+import Courses from './components/Courses';
+import Blogs from '../src/components/Blogs'
 import NewsLetter from './components/NewsLetter';
-import Features from "./components/Feature";
+import Contact from './components/Contact';
 
 export default function App() {
   return (
     <>
-    <div className="overflow-hidden">
-    <Hero />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Mapping />}></Route>
+          <Route path='/login' element={<Login />}></Route>
+          <Route path='/blogs' element={<Blogs />} ></Route>
+          <Route path='/newsletter' element={<NewsLetter />} ></Route>
+          <Route path='/contact' element={<Contact />} ></Route>
+          <Route path='/courses' element={<Courses />} ></Route>
 
-    </div>
-    
-      <Cards />
-      <Blogs />
-      <Features/>
-      <Instructor/>
-      <Contact />
-      {/* <NewsLetter /> */}
-      <Footer />
-      <Features />
+        </Routes>
+      </BrowserRouter>
+
     </>
   );
 }
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
