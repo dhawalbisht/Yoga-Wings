@@ -65,7 +65,7 @@ const Contact = () => {
                   {/* Address details */}
                   <div className="ml-4 mb-4">
                     <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-black">Our Address</h3>
-                    <p className="text-gray-600 dark:text-slate-400">Abc Hauz Khas</p>
+                    <p className="text-gray-600 dark:text-slate-400">House no. 215, near Priya Park Vasant Vihar</p>
                     <p className="text-gray-600 dark:text-slate-400">New Delhi</p>
                   </div>
                 </li>
@@ -86,7 +86,7 @@ const Contact = () => {
                   {/* Contact details */}
                   <div className="ml-4 mb-4">
                     <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-black">Contact</h3>
-                    <p className="text-gray-600 dark:text-slate-400">Mobile: +91 123456789</p>
+                    <p className="text-gray-600 dark:text-slate-400">Mobile: +91 9045546824</p>
                     <p className="text-gray-600 dark:text-slate-400">Mail: abc@gmail.com</p>
                   </div>
                 </li>
@@ -104,8 +104,8 @@ const Contact = () => {
                   {/* Working hours details */}
                   <div className="ml-4 mb-4">
                     <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-black">Working hours</h3>
-                    <p className="text-gray-600 dark:text-slate-400">Monday - Friday: 08:00 - 17:00</p>
-                    <p className="text-gray-600 dark:text-slate-400">Saturday &amp; Sunday: 08:00 - 12:00</p>
+                    <p className="text-gray-600 dark:text-slate-400">All days- Morning: 06:00 - 10:00 am</p>
+                    <p className="text-gray-600 dark:text-slate-400">All days: Evening: 04:00 - 8:00 pm</p>
                   </div>
                 </li>
               </ul>
