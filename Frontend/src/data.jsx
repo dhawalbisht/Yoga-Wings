@@ -19,5 +19,9 @@ export const navigation = [
         name: 'Courses',
         href: '#courses',
     },
+    {
+        name: "Tracker",
+        href: "/tracker"
+    }
 ];
 
