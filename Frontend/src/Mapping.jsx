@@ -6,6 +6,8 @@ import Hero from './components/Hero';
 import NewsLetter from './components/NewsLetter';
 import Features from "./components/Feature";
 import Courses from "./components/Courses";
+import UserForm from './components/userForm';
+
 
 export default function Mapping() {
     return (
@@ -17,6 +19,7 @@ export default function Mapping() {
             <NewsLetter />
             <Contact />
             <Courses />
+            <UserForm />
             <Footer />
         </>
     );
