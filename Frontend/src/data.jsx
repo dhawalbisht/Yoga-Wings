@@ -22,6 +22,10 @@ export const navigation = [
     {
         name: "Tracker",
         href: "/tracker"
+    },
+    {
+        name: "Book a class",
+        href: "/user-form"
     }
 ];
 

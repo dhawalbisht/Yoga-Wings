@@ -18,7 +18,7 @@ const NavMobile = () => {
         <BiMenu />
       </div>
       {/* menu items */}
-      <ul className={`${isOpen ? 'max-h-60 p-8' : 'max-h-0 p-0'}
+      <ul className={`${isOpen ? 'max-h-100 p-8' : 'max-h-0 p-0'}
       flex flex-col absolute w-full bg-white
       top-24 left-0 shadow-primary space-y-6 overflow-hidden
       transition-all`}>
