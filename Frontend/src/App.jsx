@@ -6,8 +6,8 @@ import NewsLetter from './components/NewsLetter';
 import Contact from './components/Contact';
 import Tracker from './components/Tracker';
 import UserForm from './components/UserForm';
-import Chat from './components/Chat';
-import './index.css';
+
+
 
 
 export default function App() {
@@ -22,7 +22,7 @@ export default function App() {
           <Route path='/instructors' element={<Instructors />} ></Route>
           <Route path='/tracker' element={<Tracker />}></Route>
           <Route path='/user-form' element={<UserForm />}></Route>
-          <Route path='/Chat' element={<Chat />} ></Route>
+
         </Routes>
       </BrowserRouter>
 

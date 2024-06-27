@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Nav from './Nav';
 import NavMobile from './NavMobile';
 import Logo from '../assets/images/logo.gif';
+import WhatsAppLogo from '../assets/images/whatsapp-logo.png';
+
 const Header = () => {
   const [header, setHeader] = useState(false);
 
@@ -30,23 +32,24 @@ const Header = () => {
         </div>
       </div>
       <div className='flex items-center'>
-        {/* buttons */}
-        <div className=' flex 1g: gap-x-4   '>
-          <button className=' text-heading font-medium
-           1g: text-base hover:text-orange-transition'>
-            Login
-          </button >
-          <button className='btn btn-md 1g:px-[30px]
-          bg-orange-100 border border-orange text-orange
-          font-medium text-sm lg:text-base
-          hover:bg-orange-200 hover:text-white transition'>
-            Sign Up
-          </button>
-        </div>
+        {/* WhatsApp logo as a button */}
+        <a
+          href="https://wa.me/91"
+          target="_blank"
+          rel="noopener noreferrer"
+          className='flex items-center'
+        >
+          <img
+            src={WhatsAppLogo}
+            alt="WhatsApp Logo"
+            className='h-[30px] w-[30px] mr-2 cursor-pointer'
+          />
+        </a>
         {/* nav mobile */}
         <NavMobile />
       </div>
     </header>
   );
 };
+
 export default Header;
