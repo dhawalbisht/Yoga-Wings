@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Tracker.css';
 
 function Tracker() {
     const [query, setQuery] = useState('');
@@ -35,55 +34,57 @@ function Tracker() {
     };
 
     return (
-        <div className='tracker-wrapper'>
-            <div className="tracker-container">
-                <h1 >Calorie-Tracker</h1>
-                <form onSubmit={handleSubmit} className="tracker-form">
+        <div className='flex justify-center items-center h-screen mt-12 bg-gray-200'>
+            <div className="bg-white p-5 rounded-lg shadow-md w-4/5 max-w-4xl h-3/5">
+                <h1 className="text-center text-gray-800 text-lg">Calorie-Tracker</h1>
+                <form onSubmit={handleSubmit} className="flex flex-col items-center gap-2 mb-5">
                     <input
                         type="text"
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
                         placeholder="Enter food items"
-                        className="tracker-input"
+                        className="p-2 text-base border border-gray-300 rounded-md w-full max-w-md"
                     />
-                    <button type="submit" className="tracker-button">Get Nutrition Info</button>
+                    <button type="submit" className="p-2 text-base bg-white text-black rounded-md cursor-pointer hover:bg-orange-500">
+                        Get Nutrition Info
+                    </button>
                 </form>
-                {error && <pre className="tracker-error">{error}</pre>}
+                {error && <pre className="text-red-500 text-center mt-5">{error}</pre>}
                 {result && (
-                    <table className="tracker-table">
+                    <table className="w-full border-collapse mt-5">
                         <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Calories</th>
-                                <th>Serving Size</th>
-                                <th>Total Fat</th>
-                                <th>Sugar</th>
-                                <th>Protein</th>
-                                <th>Carbohydrates</th>
-
+                            <tr className="bg-gray-100">
+                                <th className="p-2 text-left border-b">Name</th>
+                                <th className="p-2 text-left border-b">Calories</th>
+                                <th className="p-2 text-left border-b">Serving Size</th>
+                                <th className="p-2 text-left border-b">Total Fat</th>
+                                <th className="p-2 text-left border-b">Sugar</th>
+                                <th className="p-2 text-left border-b">Protein</th>
+                                <th className="p-2 text-left border-b">Carbohydrates</th>
+                                <th className="p-2 text-left border-b">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
                             {result.map((item, index) => (
-                                <tr key={index}>
-                                    <td>{item.name}</td>
-                                    <td>{item.calories}</td>
-                                    <td>{item.serving_size_g} g</td>
-                                    <td>{item.fat_total_g} g</td>
-                                    <td>{item.sugar_g} g</td>
-                                    <td>{item.protein_g} g</td>
-                                    <td>{item.carbohydrates_total_g} g</td>
-                                    <td>
-                                        <button type='button'
+                                <tr key={index} className="hover:bg-gray-100">
+                                    <td className="p-2 border-b">{item.name}</td>
+                                    <td className="p-2 border-b">{item.calories}</td>
+                                    <td className="p-2 border-b">{item.serving_size_g} g</td>
+                                    <td className="p-2 border-b">{item.fat_total_g} g</td>
+                                    <td className="p-2 border-b">{item.sugar_g} g</td>
+                                    <td className="p-2 border-b">{item.protein_g} g</td>
+                                    <td className="p-2 border-b">{item.carbohydrates_total_g} g</td>
+                                    <td className="p-2 border-b">
+                                        <button type="button"
                                             onClick={() => {
                                                 result.splice(index, 1);
-
                                                 setResult([...result]);
-                                            }}>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-trash-2"><path d="M3 6h18" /><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" /><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" /><line x1="10" x2="10" y1="11" y2="17" /><line x1="14" x2="14" y1="11" y2="17" /></svg>
+                                            }}
+                                            className="text-red-600 hover:text-red-800"
+                                        >
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-trash-2"><path d="M3 6h18" /><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" /><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" /><line x1="10" x2="10" y1="11" y2="17" /><line x1="14" x2="14" y1="11" y2="17" /></svg>
                                         </button>
                                     </td>
-
                                 </tr>
                             ))}
                         </tbody>

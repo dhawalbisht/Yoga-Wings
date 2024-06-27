@@ -5,8 +5,7 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import NewsLetter from './components/NewsLetter';
 import Features from "./components/Feature";
-import Courses from "./components/Instructors";
-import Instructors from './components/Instructors';
+import Instructors from "./components/Instructors";
 
 export default function Mapping() {
     return (
