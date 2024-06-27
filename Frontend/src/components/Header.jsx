@@ -42,12 +42,13 @@ const Header = () => {
           <img
             src={WhatsAppLogo}
             alt="WhatsApp Logo"
-            className='h-[30px] w-[30px] mr-2 cursor-pointer'
+            className='h-[50px] w-[50px] mr-2 cursor-pointer animate-bounce'
           />
         </a>
         {/* nav mobile */}
         <NavMobile />
       </div>
+
     </header>
   );
 };
