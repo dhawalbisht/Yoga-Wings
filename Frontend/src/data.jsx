@@ -26,6 +26,10 @@ export const navigation = [
     {
         name: "Book a class",
         href: "/user-form"
+    },
+    {
+        name: "Chat",
+        href: "/Chat"
     }
 ];
 
