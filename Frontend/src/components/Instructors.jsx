@@ -2,7 +2,7 @@ import React from 'react'
 import course from "../assets/images/blogs/course.png";
 
 
-const Courses = () => {
+const Instructors = () => {
   return (
     <section>
       {/* <div className="flex flex-col bg-orange m-auto p-auto">
@@ -126,4 +126,4 @@ const Courses = () => {
     </section>
   );
 };
-export default Courses;
+export default Instructors;
