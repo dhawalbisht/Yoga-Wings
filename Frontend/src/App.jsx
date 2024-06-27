@@ -1,10 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Mapping from './Mapping';
-import Courses from './components/Courses';
+
 import Blogs from '../src/components/Blogs'
 import NewsLetter from './components/NewsLetter';
 import Contact from './components/Contact';
 import Tracker from './components/Tracker';
+import Instructors from './components/Instructors';
 export default function App() {
   return (
     <>
@@ -14,7 +15,7 @@ export default function App() {
           <Route path='/blogs' element={<Blogs />} ></Route>
           <Route path='/newsletter' element={<NewsLetter />} ></Route>
           <Route path='/contact' element={<Contact />} ></Route>
-          <Route path='/courses' element={<Courses />} ></Route>
+          <Route path='/instructors' element={<Instructors />} ></Route>
           <Route path='/tracker' element={<Tracker />}></Route>
         </Routes>
       </BrowserRouter>

@@ -16,8 +16,8 @@ export const navigation = [
         href: '#contact',
     },
     {
-        name: 'Courses',
-        href: '#courses',
+        name: 'Instructors',
+        href: '#instructors',
     },
     {
         name: "Tracker",
