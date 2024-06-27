@@ -32,20 +32,18 @@ const Header = () => {
         </div>
       </div>
       <div className='flex items-center'>
-        {/* buttons */}
+        {/* WhatsApp logo as a button */}
         <a
-          href="https://wa.me/917983227200"
+          href="https://wa.me/91"
           target="_blank"
           rel="noopener noreferrer"
-          className='flex items-center 1g:gap-x-4'
+          className='flex items-center'
         >
-          <img src={WhatsAppLogo} alt="WhatsApp Logo" className='h-[30px] mr-2' />
-          <button className='btn btn-md 1g:px-[30px]
-          bg-orange-100 border border-orange text-orange
-          font-medium text-sm lg:text-base
-          hover:bg-orange-200 hover:text-white transition'>
-            chat
-          </button>
+          <img
+            src={WhatsAppLogo}
+            alt="WhatsApp Logo"
+            className='h-[30px] w-[30px] mr-2 cursor-pointer'
+          />
         </a>
         {/* nav mobile */}
         <NavMobile />
