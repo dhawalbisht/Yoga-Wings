@@ -19,7 +19,6 @@ export default function Mapping() {
             <NewsLetter />
             <Contact />
             <Courses />
-            <UserForm />
             <Footer />
         </>
     );
