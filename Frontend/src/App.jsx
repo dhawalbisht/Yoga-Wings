@@ -6,6 +6,9 @@ import NewsLetter from './components/NewsLetter';
 import Contact from './components/Contact';
 import Tracker from './components/Tracker';
 import UserForm from './components/userForm';
+import Chat from './components/Chat';
+import './index.css';
+
 export default function App() {
   return (
     <>
@@ -18,6 +21,7 @@ export default function App() {
           <Route path='/courses' element={<Courses />} ></Route>
           <Route path='/tracker' element={<Tracker />}></Route>
           <Route path='/user-form' element={<UserForm />}></Route>
+          <Route path='/Chat' element={<Chat />} ></Route>
         </Routes>
       </BrowserRouter>
 
