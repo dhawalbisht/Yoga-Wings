@@ -7,7 +7,7 @@ const Cards = () => {
   return (
     <section className="bg-cardsBg min-h-[260px] pb-[55px] lg:-mt-24">
       <div className="container mx-auto flex flex-col lg:flex-row gap-x-[32px] justify-center items-center">
-        <div className="flex-1 flex flex-wrap justify-center gap-x-[15px] lg:gap-x-[38px] -mt-[32px] z-10 lg:-mt-[77px] mx-auto">
+        <div className="flex-1 flex flex-wrap justify-center gap-x-[15px] lg:gap-x-[38px] gap-y-[20px] lg:gap-y-[40px] -mt-[32px] z-10 lg:-mt-[77px] mx-auto">
           <div className="bg-white w-full flex-1 max-w-[282px] p-[14px] lg:p-[26px] shadow-2xl rounded-md max-h-[282px]">
             {/* card text */}
             <div className="flex items-center mb-[18px] lg:mb-[28px]">
