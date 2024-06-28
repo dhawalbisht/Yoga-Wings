@@ -10,7 +10,7 @@ const Hero = () => {
       id="home"
     >
       <div className="container mx-auto">
-        <Header />
+       
         <div className="flex flex-col items-center lg:flex-row lg:items-start pt-32">
           <div className="flex-1 lg:mt-12">
             <h1 className="h1 mb-3 lg:mb-[22px]">

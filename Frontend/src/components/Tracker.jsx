@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import backgroundImage from '../assets/images/hero/mandala.jpg';
+import Header from './Header';
 function Tracker() {
     const [query, setQuery] = useState('');
     const [result, setResult] = useState(null);
@@ -34,18 +35,23 @@ function Tracker() {
     };
 
     return (
-        <div className='flex justify-center items-center h-screen mt-12 bg-gray-200'>
-            <div className="bg-white p-5 rounded-lg shadow-md w-4/5 max-w-4xl h-3/5">
-                <h1 className="text-center text-gray-800 text-lg">Calorie-Tracker</h1>
-                <form onSubmit={handleSubmit} className="flex flex-col items-center gap-2 mb-5">
+        <>
+        <Header/>
+        <div
+            className='flex justify-center items-center h-screen mt-12 bg-gray-200'
+            style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+        >
+            <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-md w-4/5 max-w-4xl h-3/5">
+            <h1 className="text-center text-gray-800 text-3xl font-bold mb-5 glow-effect">Calorie-Tracker</h1>
+                <form onSubmit={handleSubmit} className="flex flex-col items-center gap-4 mb-5">
                     <input
                         type="text"
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
                         placeholder="Enter food items"
-                        className="p-2 text-base border border-gray-300 rounded-md w-full max-w-md"
+                        className="p-3 text-base border border-gray-300 rounded-md w-full max-w-md focus:outline-none focus:ring-2 focus:ring-orange-500"
                     />
-                    <button type="submit" className="p-2 text-base bg-white text-black rounded-md cursor-pointer hover:bg-orange-500">
+                    <button type="submit" className="p-3 text-base border bg-orange-500 text-black rounded-md cursor-pointer hover:bg-orange">
                         Get Nutrition Info
                     </button>
                 </form>
@@ -92,6 +98,7 @@ function Tracker() {
                 )}
             </div>
         </div>
+        </>
     );
 }
 
