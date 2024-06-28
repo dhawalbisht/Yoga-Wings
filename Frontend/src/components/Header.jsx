@@ -8,21 +8,18 @@ const Header = () => {
   const [header, setHeader] = useState(false);
 
   useEffect(() => {
-    // Scroll event Listener
-    const handleScroll = () => {
+    //scroll event Listener
+    window.addEventListener('scroll', () => {
       window.scrollY > 36 ? setHeader(true) : setHeader(false);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+    });
+  });
 
   return (
     <header
-      className={`${header ? 'top-0' : 'top-9'} fixed bg-white w-full max-w-[90vw] lg:max-w-[1100px] mx-auto rounded-md h-[90px] shadow-primary px-4 lg:px-8 z-20 transition-all duration-500 flex items-center justify-center lg:justify-between`}
+      className={`${header ? 'top-0' : 'top-9'} fixed bg-white w-full max-w-[90vw] 1g:max-w-[1100px] 
+      mx-auto rounded-md h-[90px] shadow-primary px-4 
+      1g:px-8 z-20 transition-all duration-500 flex
+      items-center justify-between`}
     >
       <div className="flex items-center">
         {/* Logo */}
@@ -30,7 +27,7 @@ const Header = () => {
           <img src={Logo} alt='' style={{ width: "13rem" }} />
         </a>
         {/* nav */}
-        <div className='hidden lg:flex ml-auto'>
+        <div className='hidden lg:flex' >
           <Nav />
         </div>
       </div>
