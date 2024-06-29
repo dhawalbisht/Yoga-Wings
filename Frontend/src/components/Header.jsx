@@ -16,9 +16,8 @@ const Header = () => {
 
   return (
     <header
-      className={`${header ? 'top-0' : 'top-9'} fixed bg-white w-full max-w-[90vw] 1g:max-w-[1100px] 
-      mx-auto rounded-md h-[90px] shadow-primary px-4 
-      1g:px-8 z-20 transition-all duration-500 flex
+      className={`${header ? 'top-0' : 'top-9'} fixed bg-white w-full h-[90px] shadow-primary px-4 
+      lg:px-8 z-20 transition-all duration-500 flex
       items-center justify-between`}
     >
       <div className="flex items-center">
@@ -48,7 +47,6 @@ const Header = () => {
         {/* nav mobile */}
         <NavMobile />
       </div>
-
     </header>
   );
 };

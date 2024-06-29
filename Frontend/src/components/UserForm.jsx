@@ -61,7 +61,7 @@ const UserForm = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: 'url(https://i.pinimg.com/736x/4c/91/34/4c9134fb74cdad8a91dc883ce8a9e00a.jpg)' }}>
+        <div className="min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: 'url(https://img.freepik.com/free-vector/powder-pastel-with-hand-drawn-elements-background_52683-43687.jpg?w=1380&t=st=1719492149~exp=1719492749~hmac=73fb4ab99f205cc6a8243c1d4aa40ef40bba70ab476de13b1ebb53e13305b7c2)' }}>
             <form onSubmit={handleSubmit} className="bg-white bg-opacity-40 p-8 rounded-lg shadow-lg max-w-md w-full">
                 <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">User Form</h2>
                 <div className="mb-4">
@@ -100,7 +100,7 @@ const UserForm = () => {
                 </div>
                 <button
                     type="submit"
-                    className="w-full bg-green-500 text-black p-3 rounded-md text-lg font-semibold hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+                    className="w-full bg-green-500 text-black p-3 rounded-md text-lg font-semibold hover:bg-orange focus:outline-none focus:ring-2 focus:ring-green-500"
                 >
                     Submit
                 </button>
