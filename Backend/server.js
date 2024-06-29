@@ -5,9 +5,14 @@ const twilio = require('twilio');
 require('dotenv').config(); // Load environment variables from .env file
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
-app.use(cors());
+const corsOptions = {
+  origin: 'https://yoga-wings-palv0ybsq-dhawals-projects-bd06e0d1.vercel.app', // Vercel frontend domain
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // MongoDB connection setup
