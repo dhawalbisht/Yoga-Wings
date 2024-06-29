@@ -48,7 +48,8 @@ const UserForm = () => {
         }
 
         try {
-            await axios.post('http://localhost:5000/api/users', formData);
+            const response = await axios.post('https://yoga-wings.onrender.com/api/users', formData);
+            console.log('Server Response:', response.data);
             alert('User data submitted successfully!');
             setFormData({
                 name: '',
@@ -57,6 +58,7 @@ const UserForm = () => {
             });
         } catch (error) {
             console.error('Error submitting form data:', error);
+            alert('Failed to submit user data. Please try again later.');
         }
     };
 
