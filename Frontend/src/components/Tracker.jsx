@@ -8,23 +8,38 @@ function Tracker() {
     const [error, setError] = useState(null);
 
     const fetchNutritionData = () => {
-        fetch(`https://api.calorieninjas.com/v1/nutrition?query=${query}`, {
+        const url = `https://api.calorieninjas.com/v1/nutrition?query=${query}`;
+        const headers = {
+            'X-Api-Key': import.meta.env.VITE_API_KEY,
+            'Content-Type': 'application/json'
+        };
+
+        console.log('Fetching URL:', url);
+        console.log('Headers:', headers);
+
+        fetch(url, {
             method: 'GET',
-            headers: {
-                'X-Api-Key': process.env.REACT_APP_API_KEY
-            },
-            contentType: 'application/json'
+            headers: headers,
         })
-            .then(response => response.json())
+            .then(response => {
+                console.log('Response:', response);
+                return response.json();
+            })
             .then(data => {
-                if (Array.isArray(result)) {
-                    setResult([...result, ...data.items]);
+                console.log('Data:', data);
+                if (data.items) {
+                    if (Array.isArray(result)) {
+                        setResult([...result, ...data.items]);
+                    } else {
+                        setResult(data.items);
+                    }
+                    setError(null);
                 } else {
-                    setResult(data.items);
+                    setError('Invalid response structure');
                 }
-                setError(null);
             })
             .catch(error => {
+                console.error('Error:', error);
                 setError('Error fetching data');
                 setResult(null);
             });
