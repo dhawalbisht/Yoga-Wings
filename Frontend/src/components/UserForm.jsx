@@ -39,6 +39,20 @@ const UserForm = () => {
         }
     };
 
+    const validatePhoneNumber = async (phone) => {
+        const apiKey = '4d759741d29b47f08d7c8378857e77fe';
+        const formattedPhone = `+91${phone}`;
+        const url = `https://phonevalidation.abstractapi.com/v1/?api_key=${apiKey}&phone=${formattedPhone}`;
+
+        try {
+            const response = await axios.get(url);
+            return response.data.valid;
+        } catch (error) {
+            console.error('Error validating phone number:', error);
+            return false;
+        }
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -47,9 +61,15 @@ const UserForm = () => {
             return;
         }
 
+        const isPhoneValid = await validatePhoneNumber(formData.phone);
+        if (!isPhoneValid) {
+            alert('Invalid phone number');
+            return;
+        }
+
         try {
             const response = await axios.post('https://yoga-wings.onrender.com/api/users', formData);
-            console.log('Server Response:', response.data);
+            // console.log('Server Response:', response.data);
             alert('User data submitted successfully!');
             setFormData({
                 name: '',

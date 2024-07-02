@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const twilio = require('twilio');
+const axios = require('axios');
 require('dotenv').config();
 
 const app = express();
@@ -32,10 +33,26 @@ const User = mongoose.model('User', userSchema);
 
 // Endpoint to handle user data submission
 app.post('/api/users', async (req, res) => {
-  const { name, phone, email } = req.body;
-  const newUser = new User({ name, phone, email });
+  let { name, phone, email } = req.body;
+
+  // Add +91 to the phone number if it does not start with +
+  if (!phone.startsWith('+')) {
+    phone = `+91${phone}`;
+  }
+
+  // Validate phone number using Abstract API
+  const apiKey = process.env.ABSTRACT_API_KEY;
+  const url = `https://phonevalidation.abstractapi.com/v1/?api_key=${apiKey}&phone=${phone}`;
 
   try {
+    const validationResponse = await axios.get(url);
+    const isValid = validationResponse.data.valid;
+
+    if (!isValid) {
+      return res.status(400).json({ error: 'Invalid phone number' });
+    }
+
+    const newUser = new User({ name, phone, email });
     await newUser.save();
 
     // Send WhatsApp message (example using Twilio)
