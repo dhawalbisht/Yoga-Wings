@@ -2,10 +2,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const twilio = require('twilio');
-require('dotenv').config(); // Load environment variables from .env file
+require('dotenv').config();
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
@@ -38,7 +38,7 @@ app.post('/api/users', async (req, res) => {
   try {
     await newUser.save();
 
-    // Send WhatsApp message
+    // Send WhatsApp message (example using Twilio)
     client.messages.create({
       body: `New user information:\nName: ${name}\nPhone: ${phone}\nEmail: ${email}`,
       from: 'whatsapp:+14155238886', // Twilio Sandbox number
@@ -49,11 +49,12 @@ app.post('/api/users', async (req, res) => {
 
     res.status(201).json(newUser);
   } catch (error) {
+    console.error('Error saving user data:', error);
     res.status(500).json({ error: 'Error saving user data' });
   }
 });
 
 // Start server
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+  console.log(`Server running on port ${port}`);
 });

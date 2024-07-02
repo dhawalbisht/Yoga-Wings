@@ -1,72 +1,21 @@
-import React from 'react'
-import course from "../assets/images/blogs/course.png";
-
+import React from 'react';
+import instructor1 from '../assets/images/cards/i1.jpeg';
+import instructor2 from '../assets/images/cards/i2.jpeg';
+import instructor3 from '../assets/images/cards/i3.jpeg';
+import instructor4 from '../assets/images/cards/i4.jpeg';
+import instructor5 from '../assets/images/cards/i5.jpeg';
 
 const Instructors = () => {
   return (
     <section id='instructors'>
-      {/* <div className="flex flex-col bg-orange m-auto p-auto">
-    <h1 className="flex py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 font-bold text-4xl text-gray-800" >
-            Our Instructors
-          </h1>
-          <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
-            <div
-             className="flex flex-nowrap lg:ml-40 md:ml-20 ml-10 group"
-            >
-              <div className="inline-block px-3">
-                <div
-                 className="group-hover:blur-sm hover:!blur-none cursor-pointer w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-                ><img src={course} className='w-64 h-64 overflow-hidden rounded-lg shadow-md' alt="" /></div>
-              </div>
-              <div className="inline-block px-3">
-                <div
-                 className="group-hover:blur-sm hover:!blur-none cursor-pointer w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-                ><img src={course} className='w-64 h-64 overflow-hidden rounded-lg shadow-md' alt="" /></div>
-              </div>
-              <div className="inline-block px-3">
-                <div
-                 className="group-hover:blur-sm hover:!blur-none cursor-pointer w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-                ><img src={course} className='w-64 h-64 overflow-hidden rounded-lg shadow-md' alt="" /></div>
-              </div>
-              <div className="inline-block px-3">
-                <div
-                 className="group-hover:blur-sm hover:!blur-none cursor-pointer w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-                ><img src={course} className='w-64 h-64 overflow-hidden rounded-lg shadow-md' alt="" /></div>
-              </div>
-              <div className="inline-block px-3">
-                <div
-                 className="group-hover:blur-sm hover:!blur-none cursor-pointer w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-                ><img src={course} className='w-64 h-64 overflow-hidden rounded-lg shadow-md' alt="" /></div>
-              </div>
-              <div className="inline-block px-3">
-                <div
-                 className="group-hover:blur-sm hover:!blur-none cursor-pointer w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-                ><img src={course} className='w-64 h-64 overflow-hidden rounded-lg shadow-md' alt="" /></div>
-              </div>
-              <div className="inline-block px-3">
-                <div
-                 className="group-hover:blur-sm hover:!blur-none cursor-pointer w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-                ><img src={course} className='w-64 h-64 overflow-hidden rounded-lg shadow-md' alt="" /></div>
-              </div>
-              <div className="inline-block px-3">
-                <div
-                 className="group-hover:blur-sm hover:!blur-none cursor-pointer w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-                ><img src={course} className='w-64 h-64 overflow-hidden rounded-lg shadow-md' alt="" /></div>
-              </div>
-            </div>
-          </div>
-    </div>
-    <style > 
-  <div className='hide-scroll-bar'></div>
-</style> */} <h2 className="text-center mt-10 mb-none text-5xl">Our Instructors</h2>
+      <h2 className="text-center mt-10 mb-none text-5xl">Our Instructors</h2>
 
       <div className="flex min-h-screen items-center justify-center bg-neutral-800">
-
         <div className="grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-5">
-
+          {/* Instructor 1 */}
           <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div className="h-96 w-72">
-              <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="..//src/assets/images/cards/i1.jpeg" alt="" />
+              <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={instructor1} alt="Instructor 1" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
@@ -75,42 +24,50 @@ const Instructors = () => {
               <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"><a>See More</a></button>
             </div>
           </div>
+
+          {/* Instructor 2 */}
           <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div className="h-96 w-72">
-              <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="..//src/assets/images/cards/i2.jpeg" alt="" />
+              <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={instructor2} alt="Instructor 2" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
               <h1 className="font-dmserif text-3xl font-bold text-white">Abhishek Singh</h1>
-              <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Abhishek, one of our heaad coach with over 6 years of teaching experience in Yoga and a Yoga research Scholar.</p>
+              <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Abhishek, one of our head coaches with over 6 years of teaching experience in Yoga and a Yoga research Scholar.</p>
               <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button>
             </div>
           </div>
+
+          {/* Instructor 3 */}
           <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div className="h-96 w-72">
-              <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="..//src/assets/images/cards/i3.jpeg" alt="" />
+              <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={instructor3} alt="Instructor 3" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
               <h1 className="font-dmserif text-3xl font-bold text-white">Ritu</h1>
-              <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Ritu is a yoga enthusiast, she has expertise in Kid's Yoga and is a winner of state level Yoga championship.</p>
+              <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Ritu is a yoga enthusiast, she has expertise in Kid's Yoga and is a winner of the state-level Yoga championship.</p>
               <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button>
             </div>
           </div>
+
+          {/* Instructor 4 */}
           <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div className="h-96 w-72">
-              <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="..//src/assets/images/cards/i4.jpeg" alt="" />
+              <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={instructor4} alt="Instructor 4" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
               <h1 className="font-dmserif text-3xl font-bold text-white">Deepa Yadav</h1>
-              <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Deepa is also one of our yoga coach with over 5 years of teaching experience, she has a master degree in Yoga.</p>
+              <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Deepa is also one of our yoga coaches with over 5 years of teaching experience, she has a master's degree in Yoga.</p>
               <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button>
             </div>
           </div>
+
+          {/* Instructor 5 */}
           <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div className="h-96 w-72">
-              <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="..//src/assets/images/cards/i5.jpeg" alt="" />
+              <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={instructor5} alt="Instructor 5" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
@@ -120,10 +77,9 @@ const Instructors = () => {
             </div>
           </div>
         </div>
-
       </div>
-
     </section>
   );
 };
+
 export default Instructors;
